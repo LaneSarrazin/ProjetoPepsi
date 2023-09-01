@@ -13,7 +13,7 @@
     position: relative;
     padding: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #0062be;
     transition: 0.5s;
@@ -26,7 +26,7 @@ header{
     width: 100%;
     padding: 20px 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;    
 }
 header .logo{
@@ -43,7 +43,7 @@ header ul li {
 }
 
 header ul li a{
-    /*display: inline-block;*/
+    display: inline-block;
     color: #fff;
     font-weight: 400;
     margin-left: 100px;
@@ -55,6 +55,13 @@ header ul li a:hover{
     padding: 8px;
 
 }
+
+.mobile_menu{
+    font-size: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
 .mobile_menu a{
     text-decoration: none;
 }
@@ -62,19 +69,21 @@ header ul li a:hover{
 .content{
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: #0062be;
+    background-color:rgb(199, 199, 199);
+    padding-bottom: 20%;
 }
 
-.content .textbox{
+/*.content .textbox{
     position: relative;
     max-width: 600px;
-}
+    border: 1px solid black;
+}*/
 
 .content .textbox h2 {
-    color: #fff;
+    color:#0062be;
     font-size: 4em;
     line-height: 1.5em;
     font-weight: 900;
@@ -101,7 +110,9 @@ header ul li a:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
-
+.content .textbox a:hover{
+    background-color: #0062be;
+}
 .content .imgbox{
     width: 600px;
     display: flex;
@@ -109,9 +120,13 @@ header ul li a:hover{
     margin-top: 50px;
     justify-content: flex-end;
 }
+.imagem{
+    padding-top: 80px;
+}
 
 .content .imgbox img{
     max-width: 260px;
+    border: 1px solid black;
 }
 
 .thumb{
@@ -154,7 +169,7 @@ header ul li a:hover{
 
 .sci li{
     list-style: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 .sci li a{
@@ -172,10 +187,13 @@ header ul li a:hover{
     background-color: #0062be;
 }
 
+
+
 @media (min-width: 768px) {
     .mobile_menu{
         display: none;
     }
+
 }
 
 
@@ -184,5 +202,6 @@ header ul li a:hover{
     .menu_principal{
         display: none;
     }
+
    
 }
